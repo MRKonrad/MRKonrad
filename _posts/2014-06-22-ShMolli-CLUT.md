@@ -18,6 +18,8 @@ Simple Osirix plugin to add Color Look Up Table similar to T1 map ShMolli color 
 <a href="https://bitbucket.org/kwerys/shmolli_clut/downloads/ShMolli_CLUT.osirixplugin.zip" class="btn btn-success">Download .osirixplugin</a>
 <a href="https://bitbucket.org/kwerys/shmolli_clut.git" class="btn btn-info">Code on Bitbucket</a>
 </div>
+
+
 ##How to use it?
 
 <ul>
