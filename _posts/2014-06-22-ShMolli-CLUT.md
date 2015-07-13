@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Osirixplugin - Shmolli Color Look Up Table"
+title: "My Osirixplugin - Shmolli Color Look Up Table"
 date:   2014-06-20
 categories: osirix_plugin
+tags: soft
 ---
 
 Simple Osirix plugin to add Color Look Up Table similar to T1 map ShMOLLI color table used on Siemens scanners
