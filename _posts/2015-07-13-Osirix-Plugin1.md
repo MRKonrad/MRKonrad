@@ -6,7 +6,7 @@ categories: osirix_plugin
 tags: tutorial
 ---
 
-It's not easy to find documentation or examples how to develop one's own Osirix plugin. I gathered here some materials and my experience.
+It's not easy to find documentation or examples on how to develop one's own Osirix plugin. I gathered here some materials and my experience.
 
 # Useful websites
 
@@ -28,7 +28,7 @@ It works, but it would be nice to have debugger before we start messing with the
 1. Click **Edit Scheme**. As executable choose Osirix (one installed in Application is OK). 
 2. Go to **Arguments**, **Arguments Passed on Launch** and add     
   `--LoadPlugin $(BUILT_PRODUCTS_DIR)/$(PRODUCT_NAME).$(WRAPPER_EXTENSION)`
-3. Change architecture to one corresponding to your osirix version.
+3. Change architecture to one corresponding to your Osirix version.
 4. Build and ... Voila! Osirix should open, your plugin should be in plugins menu and you should be able to play with breakpoints in the plugin code.
 
 <figure>

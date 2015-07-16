@@ -13,10 +13,10 @@
 -  Main background colors. -
 -------------------------------------------------------------------------*/
 
-.color-1 { background: #2c3e50; } /* Title background */
-.color-2 { background: #34495e; } /* Description background */
-.color-3 { background: #f2f2f2; } /* Modules background */
-.color-4 { background: #7f8c8d; } /* Main menu background */
+.color-1 { background: #2C3E50; } /* Title background */
+.color-2 { background: #2980B9; } /* Description background */
+.color-3 { background: #ECF0F1; } /* Modules background */
+.color-4 { background: #E74C3C; } /* Main menu background */
 
 
 /* ------------------------------------------------------------------------
@@ -24,11 +24,28 @@
 -------------------------------------------------------------------------*/
 
 html, body {
-    background: #d1d1d1;
+    background: #95A5A6;
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     margin: 0;
 }
+
+/*.color-1 { background: #7D9100; } /* Title background */
+/*.color-2 { background: #A2B245; } /* Description background */
+/*.color-3 { background: #FFFFFF; } /* Modules background */
+/*.color-4 { background: #BEDB39; } /* Main menu background */
+
+
+/* ------------------------------------------------------------------------
+-  The basics. -
+-------------------------------------------------------------------------*/
+
+/*html, body {
+/*    background: #354242;
+/*    font-family: 'Open Sans', sans-serif;
+/*    font-size: 20px;
+/*    margin: 0;
+/*}*/
 
 a {
     text-decoration: none;
