@@ -145,6 +145,14 @@ article p a {
     top: 0.75em;
 }
 
+.mydate {
+    color: #999;
+    position: absolute;
+    right: 0.75em;
+    bottom: 0.75em;
+    font-size: .7em;
+}
+
 
 hr {
     border: 0;
@@ -223,6 +231,7 @@ blockquote {
 .links a {
     color: #212121;
     text-transform: lowercase;
+    font-size: 0.8em;
 }
 
     .links a:hover, .links a:active {

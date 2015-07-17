@@ -3,10 +3,10 @@ layout: post
 title: "How to Devolop an Osirix Plugin - part 3: ITK"
 date:   2015-07-15
 categories: osirix_plugin
-tags: tutorial
+tags: Tutorial
 ---
 
-You want to use other version of ITK?  Here is a solution that worked for me.  It is based on [a tutorial by Brian Jensen](http://campar.in.tum.de/Students/SepOsiriXSegmentation).
+You want to use other version of ITK?  Here is a solution that worked for me.  It is based on [a Tutorial by Brian Jensen](http://campar.in.tum.de/Students/SepOsiriXSegmentation).
 
 ## ITK
 1. Get [ITK](http://www.itk.org/) source code. Lets name path of the directory with source ``<ITK_src>`` and one with binaries ``<ITK_bin>``.
@@ -56,22 +56,22 @@ You want to use other version of ITK?  Here is a solution that worked for me.  I
 ## Pics 
 
 <figure>
-  <a href="{{ site.url }}/images/tutorial/cmakeSettings.png"><img src="{{ site.url }}/images/tutorial/cmakeSettings.png"></a>
+  <a href="{{ site.url }}/images/Tutorial/cmakeSettings.png"><img src="{{ site.url }}/images/Tutorial/cmakeSettings.png"></a>
 </figure>
 <figure>
-  <a href="{{ site.url }}/images/tutorial/error_nmITKsys.png"><img src="{{ site.url }}/images/tutorial/error_nmITKsys.png"></a>
+  <a href="{{ site.url }}/images/Tutorial/error_nmITKsys.png"><img src="{{ site.url }}/images/Tutorial/error_nmITKsys.png"></a>
 </figure>
 <figure>
-  <a href="{{ site.url }}/images/tutorial/error_GDCM.png"><img src="{{ site.url }}/images/tutorial/error_GDCM.png"></a>
+  <a href="{{ site.url }}/images/Tutorial/error_GDCM.png"><img src="{{ site.url }}/images/Tutorial/error_GDCM.png"></a>
 </figure>
 <figure>
-  <a href="{{ site.url }}/images/tutorial/error_itkv3.png"><img src="{{ site.url }}/images/tutorial/error_itkv3.png"></a>
+  <a href="{{ site.url }}/images/Tutorial/error_itkv3.png"><img src="{{ site.url }}/images/Tutorial/error_itkv3.png"></a>
 </figure>
 <figure>
-  <a href="{{ site.url }}/images/tutorial/error_itkTestDriver.png"><img src="{{ site.url }}/images/tutorial/error_itkTestDriver.png"></a>
+  <a href="{{ site.url }}/images/Tutorial/error_itkTestDriver.png"><img src="{{ site.url }}/images/Tutorial/error_itkTestDriver.png"></a>
 </figure>
 <figure>
-  <a href="{{ site.url }}/images/tutorial/PhaseSettings.png"><img src="{{ site.url }}/images/tutorial/PhaseSettings.png"></a>
+  <a href="{{ site.url }}/images/Tutorial/PhaseSettings.png"><img src="{{ site.url }}/images/Tutorial/PhaseSettings.png"></a>
 </figure>
 
 ## Code
