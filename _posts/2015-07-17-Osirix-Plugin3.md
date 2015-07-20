@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Devolop an Osirix Plugin - part 3: ITK"
-date:   2015-07-15
+date:   2015-07-17
 categories: osirix_plugin
 tags: Tutorial
 ---
