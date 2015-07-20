@@ -12,7 +12,7 @@ If one wants to use its new version in osirixplugin, there is a problem - this f
 
 Older version of [Core Plot - 1.5.1](https://github.com/core-plot/core-plot/releases/tag/release_1.5.1) is available. I compiled the source code for 32bit architecture overcoming some issues:
 
-* problem with ``Synthesized property 'areaBorderLineStyle' must be name the same as a compatible instance variable ...`` - added ``CPTLineStyle *areaBorderLineStyle;`` line to ``@interface CPTRangePlot : CPTPlot `` in file ``CPTRangePlotDelegate``.
+* problem with ``Synthesized property 'areaBorderLineStyle' must be name the same as a compatible instance variable ...`` - I added ``CPTLineStyle *areaBorderLineStyle;`` line to ``@interface CPTRangePlot : CPTPlot `` in file ``CPTRangePlotDelegate.h``.
 * problem with garbage collector - remove ``GCC_ENABLE_OBJC_GC`` flag from build settings
 * problem with testing ``OCUnit deprecated``- I tried to switch to XCTest, but in the end I removed all file groups named 'Tests'
 
