@@ -51,7 +51,7 @@ You want to use other version of ITK?  Here is a solution that worked for me.  I
 6. It complies, you can run it ([how to turn on debugging]({% post_url 2015-07-13-Osirix-Plugin1 %})). But the plugin won't load. I get ``nmITK10DataObject`` error: {% gist MRKonrad/e51bead7f4695ba13b29 %}
 6. There is a problem with the linker and dynamic lookup it performes. To solve it:
 * in **Build Settings** remove ``-undefined dynamic lookup`` from other linker flags
-* in **Build Settings** add Osirix binary path (mine is ``/Applications/OsiriX Lite.app/Contents/MacOS/OsiriX``) to let the linker know where it should look for the Osirix symbols.
+* in **Build Settings** add Osirix binary path (mine is ``/Applications/OsiriX Lite.app/Contents/MacOS/OsiriX``) in **Bundle loader**to let the linker know where it should look for the Osirix symbols.
 
 ## Pics 
 
