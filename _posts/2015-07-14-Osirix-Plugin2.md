@@ -42,7 +42,7 @@ Plugin will compile but we get ``Symbol not found: itk14LBFGSOptimizer`` error. 
 To better understand the problem, see the [linker manual](http://www.manpages.info/macosx/ld.1.html) and [Brian's explanation](http://campar.in.tum.de/Students/SepOsiriXSegmentation) in ProjectConfiguration.pdf.
 
 <figure>
-  <a href="{{ site.url }}/images/Tutorial/PhaseSettings.png"><img src="{{ site.url }}/images/tutorial/PhaseSettings.png"></a>
+  <a href="{{ site.url }}/images/Tutorial/PhaseSettings.png"><img src="{{ site.url }}/images/Tutorial/PhaseSettings.png"></a>
 </figure>
 
 ## Code 
