@@ -4,6 +4,8 @@ description: "Cardiac MRI"
 url: http://mrkonrad.github.io/MRKonrad
 # url: http://localhost:4000
 
+gems: [jekyll-paginate, jekyll-gist]
+
 #markdown: redcarpet
 markdown: kramdown
 highlighter: pygments

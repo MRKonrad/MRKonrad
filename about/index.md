@@ -7,6 +7,8 @@ title: About me.
   <a href="{{ site.url }}/images/avatar.jpg"><img src="{{ site.url }}/images/avatar.jpg" alt="Konrad" height="64" width="64"></a>
 </figure>
 
+<a href="{{ site.url }}/files/Werys_cv.pdf" class="btn btn-info">Curriculum Vitae in pdf</a><br/>
+
 My main interest is **cardiac magnetic resonance imaging**. 
 <br/>I like **Matlab**.
 

@@ -46,6 +46,5 @@ To better understand the problem, see the [linker manual](http://www.manpages.in
 </figure>
 
 ## Code 
-
 {% gist MRKonrad/8732d8ba2b14c8a07851 %}
 
