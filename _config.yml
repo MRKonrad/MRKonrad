@@ -8,7 +8,7 @@ gems: [jekyll-paginate, jekyll-gist]
 
 #markdown: redcarpet
 markdown: kramdown
-highlighter: pygments
+#highlighter: pygments
 
 paginate: 5
 permalink: /:title
@@ -18,7 +18,7 @@ disqus-id: kwerys
 bitbucket: kwerys
 twitter: MR_Konrad
 github: MRKonrad
-google: 110666846551233806516 
+google: 110666846551233806516
 researchgate: Konrad_Werys
 
 # RSS feed

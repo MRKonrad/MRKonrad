@@ -14,8 +14,7 @@ Simple Osirix plugin to add Color Look Up Table similar to T1 map ShMOLLI color 
 <a href="https://bitbucket.org/kwerys/shmolli_clut.git" class="btn btn-info">Code on Bitbucket</a>
 </div>
 
-
-##How to use it?
+## How to use it?
 
 <ul>
   <li>Install</li>
@@ -37,6 +36,6 @@ Simple Osirix plugin to add Color Look Up Table similar to T1 map ShMOLLI color 
 </figure>
 
 
-##Comments
+## Comments
 * I could not find how to add custom CLUT not using OsiriX CLUT editor. So I hardcoded CLUT in a plugin. Feel free to sugest a better solution =]
 * Original map has 4096 color levels, Osirix uses only 256, so I took every 16th value from original map.
