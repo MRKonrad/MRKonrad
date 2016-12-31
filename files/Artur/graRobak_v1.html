@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<style>
+#robakStyle {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+</style>
+
+<body>
+    <h1 id="pointsText">Click on the bugs, you have 30 seconds!</h1>
+</body>
+
+</html>
+
+<script>
+
+    var points = 0;
+    var koniec = false;
+    setTimeout(funkcjaNaKoniec, 30000)
+    rysujRobakaWlosowejPozycji()
+    rysujRobakaWlosowejPozycji()
+    rysujRobakaWlosowejPozycji()
+
+
+    function rysujRobaka(x, y) {
+        var myimag = document.createElement("IMG");
+        myimag.setAttribute("src", "KWrobak.gif");
+        myimag.setAttribute("id", "robakStyle");
+        myimag.setAttribute("style", "top:" + y + "px;left:" + x + "px;");
+        myimag.onclick = function () { poKlinieciu(myimag) };
+        document.body.appendChild(myimag);
+    }
+
+    function rysujRobakaWlosowejPozycji() {
+        var x = Math.floor((Math.random() * 400) + 1);
+        var y = Math.floor((Math.random() * 400) + 1);
+        rysujRobaka(x, y);
+    }
+
+    function ustawRobakaWnowejPozycji(myimag) {
+        var x = Math.floor((Math.random() * 400) + 1);
+        var y = Math.floor((Math.random() * 400) + 1);
+        myimag.setAttribute("style", "top:" + y + "px;left:" + x + "px;");
+    }
+
+    function poKlinieciu(myimag) {
+        if (!koniec) {
+            ustawRobakaWnowejPozycji(myimag)
+            points = points + 1;
+            document.getElementById("pointsText").innerHTML = "Points = " + points;
+        }
+    }
+
+    function funkcjaNaKoniec() {
+        koniec = true;
+        document.getElementById("pointsText").innerHTML = "Your score is = " + points + ". Please reload the website to play again.";
+    }
+
+
+</script>

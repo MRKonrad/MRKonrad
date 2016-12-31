@@ -17,9 +17,9 @@ When writing your own and you use CMakeLists.txt and you use ``find_package(<pac
 
 {% highlight cmake%}
 get_cmake_property(_variableNames VARIABLES)
- foreach (_variableName ${_variableNames})
-    message(STATUS "${_variableName}=${${_variableName}}")
- endforeach() #_)
+foreach (_variableName ${_variableNames})
+  message(STATUS "${_variableName}=${${_variableName}}")
+endforeach() #_)
 {% endhighlight %}
 
 ## Other
