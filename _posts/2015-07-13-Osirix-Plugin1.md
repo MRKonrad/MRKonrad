@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "How to Devolop an Osirix Plugin - part 1: basics"
+title: "How to develop an Osirix Plugin - part 1: basics"
 date:   2015-07-13
 categories: osirix_plugin
-tags: tutorial
+tags: Tutorial
 ---
 
 It's not easy to find documentation or examples on how to develop one's own Osirix plugin. I gathered here some materials and my experience.
+
+* Update 2017-08-12: [Check the new version of this tutorial]({{ site.baseurl }}{% post_url 2017-08-12-Horos-Plugin %}).
 
 # Useful websites
 
@@ -23,9 +25,9 @@ It's not easy to find documentation or examples on how to develop one's own Osir
 3. Configure build settings -Change ``Base SDK`` to ``Latest OSX``
 4. Build and ... Voila! - you should be able to install your plugin, restart osirix and run your plugin.
 
-It works, but it would be nice to have debugger before we start messing with the code. 
+It works, but it would be nice to have debugger before we start messing with the code.
 
-1. Click **Edit Scheme**. As executable choose Osirix (one installed in Application is OK). 
+1. Click **Edit Scheme**. As executable choose Osirix (one installed in Application is OK).
 2. Go to **Arguments**, **Arguments Passed on Launch** and add     
   `--LoadPlugin $(BUILT_PRODUCTS_DIR)/$(PRODUCT_NAME).$(WRAPPER_EXTENSION)`
 3. Change architecture to one corresponding to your Osirix version.

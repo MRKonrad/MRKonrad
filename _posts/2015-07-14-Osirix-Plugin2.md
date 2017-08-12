@@ -1,15 +1,17 @@
 ---
 layout: post
-title: "How to Devolop an Osirix Plugin - part 2: ITK"
+title: "How to develop an Osirix Plugin - part 2: ITK"
 date:   2015-07-14
-categories: osirix_plugin
-tags: tutorial
+categories: osirix_plugin, ITK
+tags: Tutorial
 ---
 
 This time we want to use basic ITK filtering in our plugin.
 
+* Update 2017-08-12: [Check the new version of this tutorial]({{ site.baseurl }}{% post_url 2017-08-12-Horos-Plugin %}).
+
 ## Part 1
-1. For testing purposes use the code from the bottom of the page. The file has to have ``.mm`` extention (Typical error: ``Lexical or Preprocessor Issue 'iostream' file not found``). 
+1. For testing purposes use the code from the bottom of the page. The file has to have ``.mm`` extention (Typical error: ``Lexical or Preprocessor Issue 'iostream' file not found``).
 2. Get ITK. This time we are going to use ITK version used in Osirix and provided in Osirix code.
   * Get Osirix code from [Osirix github repository](https://github.com/pixmeo/osirix) to ``<your_osirix_path>``
   * In Osirix xcode project select **Unzip Binaries** as a target to build. Run it. In ``<your_osirix_path>``. ``ITK180`` dir should appear.
@@ -35,7 +37,7 @@ OptimizerType::Pointer optimizer = OptimizerType::New();
 {% endhighlight %}
 Plugin will compile but we get ``Symbol not found: itk14LBFGSOptimizer`` error. To solve it:
 
-1. In **Build Phases** add ITK libraries from <ITK180> folder (see picture). You can move them to a suitable group in XCode navigator. 
+1. In **Build Phases** add ITK libraries from <ITK180> folder (see picture). You can move them to a suitable group in XCode navigator.
 2. In **Build Settings** remove ``-undefined dynamic lookup`` from other linker flags
 3. In **Build Settings** add Osirix binary path (mine is ``/Applications/OsiriX Lite.app/Contents/MacOS/OsiriX``) to let the linker know where it should look for the Osirix symbols.v
 
@@ -45,6 +47,5 @@ To better understand the problem, see the [linker manual](http://www.manpages.in
   <a href="{{ site.url }}/images/Tutorial/PhaseSettings.png"><img src="{{ site.url }}/images/Tutorial/PhaseSettings.png"></a>
 </figure>
 
-## Code 
+## Code
 {% gist MRKonrad/8732d8ba2b14c8a07851 %}
-

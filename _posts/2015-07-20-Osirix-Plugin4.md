@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to Devolop an Osirix Plugin - part 4: Plot"
+title: "How to develop an Osirix Plugin - part 4: Plot"
 date:   2015-07-20
 categories: osirix_plugin, CorePlot
 tags: Tutorial
