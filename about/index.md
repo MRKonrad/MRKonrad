@@ -3,42 +3,44 @@ layout: page
 title: About me.
 ---
 
+<a href="{{ site.url }}/files/Werys_cv.pdf" class="btn btn-info">Curriculum Vitae in pdf</a><br/>
+
+My main interest is **cardiac magnetic resonance imaging**. I like **Matlab**, **ITK** and **C++**.
+
+I am a postdoctoral researcher at [the University of Oxford Centre for Clinical Magnetic Resonance Research](http://www.ocmr.ox.ac.uk/).
+
+I got my PhD at [the Warsaw University of Technology (WUT)](http://www.pw.edu.pl/engpw). I used to work as an engineer in [the Institute of Cardiology in Warsaw (IKARD)](http://www.ikard.pl/latest-news.html).
+
+See my articles at the [Google Scholar website](https://scholar.google.co.uk/citations?user=wAEw_twAAAAJ).
+
 <figure>
   <a href="{{ site.url }}/images/avatar.jpg"><img src="{{ site.url }}/images/avatar.jpg" alt="Konrad" height="64" width="64"></a>
 </figure>
 
-<a href="{{ site.url }}/files/Werys_cv.pdf" class="btn btn-info">Curriculum Vitae in pdf</a><br/>
-
-My main interest is **cardiac magnetic resonance imaging**. 
-<br/>I like **Matlab**.
-
-I am a PhD student at [the Warsaw University of Technology (WUT)](http://www.pw.edu.pl/engpw).
-
-I am also an engineer in [the Institute of Cardiology in Warsaw (IKARD)](http://www.ikard.pl/latest-news.html). I work on Avanto scanner with some interesting sequences: [tagging](/about), [T1 mapping](/about), [4d-flow](/about).
-
+### T1 mapping
+* Currently I am working on ShMOLLI T1 mapping improvements.
+* I developed an [Osirix plugin]({{ site.url }}/MRHeartT1) to calculate T1. I am working on a new version.
+* I was working in IKARD's grant about myocardial fibrosis, [see the article [4]](#articles).
 
 ### Cardiac Strain
-* currently I am working on registration algorithms, [see the page]({{ site.url }}/MRViewer)
-* I got an IKARD's grant to study 20 healthy volunteers 
-* I am working on dynamic phantoms ([article [3]](#articles)) (with group from Institute of Metrology and Biomedical Engineering, WUT)
-* I am working with cardiac resynchronization therapy patient data, [see the article [1]](#articles)
-* my masters thesis was about harmonic phase (HARP) algorithm
-
-### T1 mapping
-* I am working in IKARD's grant about myocardial fibrosis, [see the article [4]](#articles)
-* I developed an [Osirix plugin]({{ site.url }}/ShMolli-CLUT) to see T1 maps in ShMolli colors
+* I was working on registration algorithms, [see the page]({{ site.url }}/MRViewer).
+* I had got an IKARD's grant to study 20 healthy volunteers.
+* I was working on dynamic phantoms ([article [3]](#articles)) (with group from Institute of Metrology and Biomedical Engineering, WUT).
+* I was working  with cardiac resynchronization therapy patient data, [see the article [1]](#articles).
+* my masters thesis was about harmonic phase (HARP) algorithm.
 
 ### Reconstruction
-* I am working on phase sensitive recontruction algorithm for late gadolinium enchancement (LGE), [see the presentation [14]](#2013)
-* this work is part of my colaboration with a [group](http://www.ucair.med.utah.edu/) from [University of Utah](http://www.utah.edu/)
+* I was working on phase sensitive reconstruction algorithm for late gadolinium enhancement (LGE), [see the presentation [14]](#2013).
+* this work was part of my collaboration with a [group](http://www.ucair.med.utah.edu/) from [University of Utah](http://www.utah.edu/).
 
 ### Cardiac Perfusion
-* I worked in an IKARD's grant about [see the presentation [22]](#2015)
+* I was working in an IKARD's grant about [see the presentation [22]](#2015).
 
 ### 4d Flow
-* I worked in an IKARD's grant about Fontan procedure, [see the presentation [13]](#2013)
+* I was working in an IKARD's grant about Fontan procedure, [see the presentation [13]](#2013).
 
-## Articles <a name="articles"></a>
+
+## Slightly outdated list of my articles <a name="articles"></a>
 
    [1] J. Petryka, J. Miśko, A. Przybylski, M. Spiewak, L. A. Małek, K. Werys, L. Mazurkiewicz, K. Gepner, P. Croisille, M. Demkow, and W. Rużyłło, “Magnetic resonance imaging assessment of intraventricular dyssynchrony and delayed enhancement as predictors of response to cardiac resynchronization therapy in patients with heart failure of ischaemic and non-ischaemic etiologies,” Eur J Radiol, Nov. 2011.
 
@@ -46,7 +48,7 @@ I am also an engineer in [the Institute of Cardiology in Warsaw (IKARD)](http://
 
    [3] S. Cygan, K. Werys, Ł. Błaszczyk, T. Kubik, and K. Kałużyński, “Left ventricle phantom and experimental setup for MRI and echocardiography – Preliminary results of data acquisitions,” Biocybernetics and Biomedical Engineering, vol. 34, no. 1, pp. 19–24, 2014.
 
-   [4]Ł. A. Małek, K. Werys, M. Kłopotowski, M. Śpiewak, B. Miłosz-Wieczorek, Ł. Mazurkiewicz, M. Marczak, and A. Witkowski, “Native T1-mapping for non-contrast assessment of myocardial fibrosis in patients with hypertrophic cardiomyopathy,” Magnetic Resonance Imaging, Apr. 2015.
+   [4] Ł. A. Małek, K. Werys, M. Kłopotowski, M. Śpiewak, B. Miłosz-Wieczorek, Ł. Mazurkiewicz, M. Marczak, and A. Witkowski, “Native T1-mapping for non-contrast assessment of myocardial fibrosis in patients with hypertrophic cardiomyopathy,” Magnetic Resonance Imaging, Apr. 2015.
 
 ## Presentations at conferences <a name="presentations"></a>
 
@@ -87,7 +89,7 @@ I am also an engineer in [the Institute of Cardiology in Warsaw (IKARD)](http://
 ### 2015 <a name="2015"></a>
 
    [18] K. Werys, A. Kubik, A. Dąbrowska, Ł. A. Małek, M. Marczak, S. K. Piechnik, and P. Bogorodzki, “Myocardial ShMOLLI T1 values are not significantly affected by GRAPPA or coil selection,” presented at the 32nd Annual Scientific Meeting of the of European Society for Magnetic Resonance in Medicine and Biology, Edinburgh, UK, 2015.
-   
+
    [19] K. Werys, K. Pieniak, B. Leśniak-Plewińska, J. Żmigrodzki, and S. Cygan, “Validation of the PVA cryogel with glycerol as a material for MRI phantoms,” presented at the The 8th IEEE International Conference on Intelligent Data Acquisition and Advanced Computing Systems: Technology and Applications, Warsaw, 2015.
 
    [20] K. Werys, Ł. Błaszczyk, A. Kubik, M. Marczak, and P. Bogorodzki, “Displacement field calculation from CINE MRI using non-rigid image registration,” presented at the The 8th IEEE International Conference on Intelligent Data Acquisition and Advanced Computing Systems: Technology and Applications, Warsaw, 2015.
@@ -99,11 +101,3 @@ I am also an engineer in [the Institute of Cardiology in Warsaw (IKARD)](http://
    [23] K. Werys, Ł. Błaszczyk, A. Kubik, M. Marczak, and P. Bogorodzki, “Evaluation of cardiac motion in MRI,” presented at the Warsaw Medical Physics Meeting, 2015.
 
    [24] A. Kubik, M. Marczak, J. Rybicka, and K. Werys, “Application of the 4d Flow visualisation in cardiology,” presented at the Warsaw Medical Physics Meeting, Warsaw, 2015.
-
-
-
-
-
-
-
-

@@ -6,9 +6,7 @@ url: http://mrkonrad.github.io/MRKonrad
 
 gems: [jekyll-paginate, jekyll-gist]
 
-#markdown: redcarpet
 markdown: kramdown
-#highlighter: pygments
 
 paginate: 5
 permalink: /:title
