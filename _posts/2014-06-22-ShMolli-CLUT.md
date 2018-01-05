@@ -6,12 +6,14 @@ categories: osirix_plugin
 tags: soft
 ---
 
+* Update 2018-01-05: [This post is outdated, code and binaries were moved to other repository. Check the new version of this plugin. ]({{ site.baseurl }}{% post_url 2018-01-05-getDicomClut %}).
+
 Simple Osirix plugin to add Color Look Up Table similar to T1 map ShMOLLI color table used on Siemens scanners
 [ShMOLLI article](http://www.jcmr-online.com/content/12/1/69).
 
 <div markdown="0">
-<a href="https://bitbucket.org/kwerys/shmolli_clut/downloads/ShMolli_CLUT.osirixplugin.zip" class="btn btn-success">Download .osirixplugin</a>
-<a href="https://bitbucket.org/kwerys/shmolli_clut.git" class="btn btn-info">Code on Bitbucket</a>
+<a href="https://bitbucket.org/kwerys/getdicomclut/downloads/getdicomclut.osirixplugin.zip" class="btn btn-success">Download .osirixplugin</a>
+<a href="https://bitbucket.org/kwerys/getdicomclut.git" class="btn btn-info">Code on Bitbucket</a>
 </div>
 
 ## How to use it?
@@ -37,5 +39,5 @@ Simple Osirix plugin to add Color Look Up Table similar to T1 map ShMOLLI color 
 
 
 ## Comments
-* I could not find how to add custom CLUT not using OsiriX CLUT editor. So I hardcoded CLUT in a plugin. Feel free to sugest a better solution =]
+* I could not find how to add custom CLUT not using OsiriX CLUT editor. So I hardcoded CLUT in a plugin. Feel free to suggest a better solution =]
 * Original map has 4096 color levels, Osirix uses only 256, so I took every 16th value from original map.
