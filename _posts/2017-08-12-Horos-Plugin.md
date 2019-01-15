@@ -81,3 +81,9 @@ Replace `<myPluginFilter>` with your filter class name (see also [OsirixPluginBa
   * In connections inspector connect `hostView` outlet to the `Custom View`.
   * Everything should compile but you can run into a problem with loading your plugin `Library not loaded`, `Reason: image not found`. In build settings set
   `Runpath search paths` to `LD_RUNPATH_SEARCH_PATHS = @loader_path/../Frameworks`. In build phases add `New copy files phase` using `+` at the top of the screen. Change `Destination` to `Frameworks` and drag and drop `CorePlot.framework` from the left panel.
+
+# Troubleshooting
+
+## Typeinfo file not found
+Error: ` /usr/local/include/ITK-4.12/itkMacro.h:45:10: 'typeinfo' file not found `
+Solution: change file extension from `.m` to `.mm`
