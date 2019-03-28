@@ -65,7 +65,7 @@ Replace `<myPluginFilter>` with your filter class name (see also [OsirixPluginBa
     cd ITK  
     git checkout --track -b release origin/release-2.3  
     ```
-2. Annoyingly, following [CorePlot instructions](https://github.com/core-plot/core-plot/wiki/Using-Core-Plot-in-an-Application) does not do the job (XCode cannot localize `CorePlot.h`) as far as I tried it.To make CorePlot work you can try the following steps:
+2. Annoyingly, following [CorePlot instructions](https://github.com/core-plot/core-plot/wiki/Using-Core-Plot-in-an-Application) does not do the job (XCode cannot localize `CorePlot.h`) as far as I tried it. To make CorePlot work you can try the following steps:
   * Open CorePlot project and build it. You can build Release version by Edit Scheme -> Build Configuration -> Deployment.
   * CorePlot is build to <myCodeDir>/core-plot/build/ folder. Drag and drop CorePlot.framework to your project opened in XCode. Select 'Copy files if needed'.
   * Add `#import <CorePlot/CorePlot.h>` in your code to verify everything works.
