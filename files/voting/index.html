@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title></title>
+  </head>
+
+  <body>
+
+    <h1>The best colormap scoring website ever</h1>
+    <p>Drag the green slider to display the current value.</p>
+    <p id="instructions">Adjust it accordingly and then press next</p>
+    <p>Value: <span id="demo"></span></p>
+
+    <div style="display:block">
+      <img id="myimage" width=400px src="data/Data1Colormap1.png">
+    </div>
+
+    <div class="slidecontainer">
+      <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    </div>
+
+    <button type="button" name="data" class="button" onclick="mybutton_callback()">
+      Next
+    </button>
+
+  </body>
+
+  <script>
+
+  var slider = document.getElementById("myRange");
+  var output = document.getElementById("demo");
+  output.innerHTML = slider.value;
+
+  slider.oninput = function() {
+    output.innerHTML = this.value;
+  }
+
+  var currentImage = 0; //assuming the 1st image shown is always the first
+  var imagesToProcess = 5;
+
+  var random_images_array = [
+    "Data1Colormap1.png",
+    "Data2Colormap1.png",
+    "Data3Colormap1.png",
+    "Data1Colormap2.png",
+    "Data2Colormap2.png",
+    "Data3Colormap2.png",
+    "Data1Colormap3.png",
+    "Data2Colormap3.png",
+    "Data3Colormap3.png",
+    ];
+
+  var results_array = [];
+
+  mybutton_callback()
+
+  function mybutton_callback() {
+
+    var num = Math.floor( Math.random() * random_images_array.length );
+    var img = random_images_array[ num ];
+
+    var temp = {image:img, score:slider.value}
+    results_array.push(temp);
+
+    document.getElementById('myimage').src = 'data/' + img;
+    document.getElementById('instructions').innerHTML = "You have " + (imagesToProcess - currentImage) + " images to process"
+
+    if (currentImage == imagesToProcess){
+      download("hello.txt", results_array);
+    }
+    currentImage = currentImage + 1
+  }
+
+  function download(filename, results_array) {
+    var element = document.createElement('a');
+
+    mystring = ""
+    for (var i = 0; i < results_array.length; i++) {
+      mystring = mystring + results_array[i].image + " " + results_array[i].score + "\n";
+    }
+
+    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(mystring));
+    element.setAttribute('download', filename);
+
+    element.style.display = 'none';
+    document.body.appendChild(element);
+
+    element.click();
+
+    document.body.removeChild(element);
+
+    currentImage = 0
+  }
+
+  </script>
+
+</html>
