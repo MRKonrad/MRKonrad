@@ -4,27 +4,44 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
+    <!-- for more styles check: https://freefrontend.com/css-headers-footers/ -->
     <title></title>
   </head>
 
   <body>
+    <section data-description="">
+  	<div class="wrapper">
+  	 <h1 class="gamma lato thin uppercase ls-xlarge">
+  		 The best colormap<br>
+  		 <span class="open-sans tera ls-xlarge bold">scoring website</span><br>
+  		 <span class="epsilon ls-medium">ever</span>
+  		</h1>
+  	 </div>
+  	</section>
 
-    <h1>The best colormap scoring website ever</h1>
-    <p>Drag the green slider to display the current value.</p>
-    <p id="instructions">Adjust it accordingly and then press next</p>
-    <p>Value: <span id="demo"></span></p>
+    <div class="center">
 
-    <div style="display:block">
-      <img id="myimage" width=400px src="data/Data1Colormap1.png">
+    <div style="display:block" >
+      <img id="myimage" width=30% src="data/Data1Colormap1.png">
     </div>
+
+    <span class=""></br>Value: <span id="demo"></span></span></br>
 
     <div class="slidecontainer">
       <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
     </div>
 
+    <span class="" >
+      Drag the green slider to display the current value. </br> Adjust it accordingly and then press next </br>
+    </span>
+    <span class="" id="instructions">
+    </span>
+</br>
     <button type="button" name="data" class="button" onclick="mybutton_callback()">
       Next
     </button>
+  </div>
+</div>
 
   </body>
 
@@ -56,6 +73,8 @@
   var results_array = [];
 
   mybutton_callback()
+  // allow page refresh again
+  window.onbeforeunload = function() {}
 
   function mybutton_callback() {
 
@@ -66,12 +85,17 @@
     results_array.push(temp);
 
     document.getElementById('myimage').src = 'data/' + img;
-    document.getElementById('instructions').innerHTML = "You have " + (imagesToProcess - currentImage) + " images to process"
+    document.getElementById('instructions').innerHTML = "You have " + (imagesToProcess - currentImage) + " more images to process"
 
     if (currentImage == imagesToProcess){
       download("hello.txt", results_array);
     }
     currentImage = currentImage + 1
+
+    // prevent page refresh
+    window.onbeforeunload = function() {
+        return "Dude, are you sure you want to leave? Think of the kittens!";
+    }
   }
 
   function download(filename, results_array) {
@@ -93,6 +117,9 @@
     document.body.removeChild(element);
 
     currentImage = 0
+
+    // allow page refresh again
+    window.onbeforeunload = function() {}
   }
 
   </script>
