@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About me.
+title: About me
 ---
 
 My main interest is **cardiac magnetic resonance imaging**. I like **Matlab**, **ITK** and **C++**.
